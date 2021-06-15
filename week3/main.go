@@ -14,6 +14,7 @@ import (
 )
 
 func main() {
+	log.SetFlags(log.Lshortfile)
 	//ctx, cancel := xContext.WithCancel(xContext.Background())
 	ctx, cancel := context.WithCancel(context.Background())
 	group, errCtx := errgroup.WithContext(ctx)
